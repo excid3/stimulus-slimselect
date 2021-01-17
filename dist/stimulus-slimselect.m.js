@@ -1,0 +1,2 @@
+import{Controller as t}from"stimulus";import e from"slim-select";var o=function(t){var o,r;function n(){return t.apply(this,arguments)||this}r=t,(o=n).prototype=Object.create(r.prototype),o.prototype.constructor=o,o.__proto__=r;var s=n.prototype;return s.connect=function(){this.slimselect=new e({select:this.element})},s.disconnect=function(){this.slimselect.destroy()},n}(t);export default o;
+//# sourceMappingURL=stimulus-slimselect.m.js.map

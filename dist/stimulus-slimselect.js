@@ -1,0 +1,2 @@
+var t,e=require("stimulus"),o=(t=require("slim-select"))&&"object"==typeof t&&"default"in t?t.default:t;module.exports=function(t){var e,r;function n(){return t.apply(this,arguments)||this}r=t,(e=n).prototype=Object.create(r.prototype),e.prototype.constructor=e,e.__proto__=r;var s=n.prototype;return s.connect=function(){this.slimselect=new o({select:this.element})},s.disconnect=function(){this.slimselect.destroy()},n}(e.Controller);
+//# sourceMappingURL=stimulus-slimselect.js.map
