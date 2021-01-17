@@ -1,6 +1,6 @@
 {
   "name": "stimulus-slimselect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Stimulus wrapper around Slimselect",
   "main": "dist/stimulus-slimselect.js",
   "umd:main": "dist/stimulus-slimselect.umd.js",
@@ -26,8 +26,8 @@
     "tests": false
   },
   "peerDependencies": {
-    "stimulus": ">=2.0.0",
-    "slim-select": "^1.27.0"
+    "slim-select": "^1.27.0",
+    "stimulus": ">=2.0.0"
   },
   "scripts": {
     "build": "microbundle --globals stimulus=Stimulus",
