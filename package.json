@@ -1,6 +1,6 @@
 {
   "name": "stimulus-slimselect",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A Stimulus wrapper around Slimselect",
   "main": "dist/stimulus-slimselect.js",
   "umd:main": "dist/stimulus-slimselect.umd.js",
