@@ -8,7 +8,7 @@ This is a Stimulus wrapper around the SlimSelect library.
 
 This assumes that [StimulusJS](https://stimulusjs.org) is already installed.
 
-Add the `tailwindcss-stimulus-components` module:
+Add the `stimulus-slimselect` module:
 
 ```bash
 $ yarn add stimulus-slimselect
@@ -22,7 +22,7 @@ $ npm install stimulus-slimselect
 
 ## Basic Usage
 
-First, you'll want to initialize StimulusJS and then you can import all the TailwindCSS components.
+First, you'll want to initialize StimulusJS and then you can import the Stimulus component.
 
 ```javascript
 // Start StimulusJS
@@ -33,7 +33,7 @@ const application = Application.start();
 const context = require.context("controllers", true, /.js$/);
 application.load(definitionsFromContext(context));
 
-// Import and register all TailwindCSS Components
+// Import and register the component
 import StimuluSlimSelect from "stimulus-slimselect"
 application.register('slimselect', StimulusSlimSelect)
 ```
