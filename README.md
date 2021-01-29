@@ -34,7 +34,7 @@ const context = require.context("controllers", true, /.js$/);
 application.load(definitionsFromContext(context));
 
 // Import and register the component
-import StimuluSlimSelect from "stimulus-slimselect"
+import StimulusSlimSelect from "stimulus-slimselect"
 application.register('slimselect', StimulusSlimSelect)
 ```
 
