@@ -2,21 +2,25 @@
 
 # Stimulus SlimSelect
 
-This is a Stimulus wrapper around the SlimSelect library.
+This is a Stimulus wrapper around the [SlimSelect](https://slimselectjs.com/) library.
 
 ## Install
 
 This assumes that [StimulusJS](https://stimulusjs.org) is already installed.
 
+**Optional**: Add the SlimSelect module if it is not already installed:
+
+```bash
+$ yarn add slim-select
+# OR
+$ npm install slim-select
+```
+
 Add the `stimulus-slimselect` module:
 
 ```bash
 $ yarn add stimulus-slimselect
-```
-
-or
-
-```bash
+OR
 $ npm install stimulus-slimselect
 ```
 
