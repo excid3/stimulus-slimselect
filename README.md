@@ -45,6 +45,55 @@ application.register('slimselect', StimulusSlimSelect)
 This will start StimulusJS and load any controllers that you have
 locally and then register the Stimulus SlimSelect controller.
 
+### Configure SlimSelect using data attributes
+
+To supply additional options to SlimSelect include them as data attributes, booleans will automatically be casted:
+
+```html
+<select
+  id="product_id"
+  name="product_id"
+  data-placeholder="This is used as the placeholder"
+  data-allow-deselect="true"
+/>
+```
+
+*Note*: the attributes will automatically be converted from kebab-case to camelCase as required by SlimSelect.
+
+## AJAX Usage
+
+This wrapper allows you to make AJAX calls for the searches and configure it through data attributes. The following attributes are exposed:
+
+| Command | Default | Description |
+| --- | --- | --- |
+| `ajaxUrl` | - | Url used to make the AJAX call (Supply a path `/` or complete url) |
+| `ajaxUrlParam` | search | Parameter that holds the search term |
+| `ajaxMinimumLength` | 2 | If the search term is shorter or equal to this number the AJAX call will not be executed |
+| `ajaxMinimumLengthMessage` | false | Message shown when the ajaxMinimumLength is not reached |
+| `ajaxRootColumn` | | Column that holds the result array (dot notation) |
+| `ajaxValueColumn` | value | Column that holds the value (dot notation) |
+| `ajaxTextColumn` | text | Column that holds the text/label (dot notation) |
+| `ajaxDebounceMs` | 175 | Ajax calls are debounced to not overload the server (in miliseconds) |
+
+### Dot notation
+
+By using the dot notation you are able to dig into the object to get the right results. Use as follows:
+
+```javascript
+{
+  data: {
+    products: [{ value: 'id1', text: 'Label' }],
+    otherColumn: 'test'
+  }
+}
+```
+
+By supplying `data.products` as the `ajaxRootColumn` value it will use the Array that holds:
+
+```javascript
+[{ value: 'id1', text: 'Label' }]
+```
+
 ## Extending Components
 
 You can use inheritance to extend the functionality of any Stimulus components.
