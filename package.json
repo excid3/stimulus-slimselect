@@ -26,8 +26,9 @@
     "tests": false
   },
   "peerDependencies": {
-    "slim-select": "^1.27.0",
-    "stimulus": ">=2.0.0"
+    "slim-select": "1.26.1",
+    "stimulus": ">=2.0.0",
+    "jsdig": ">=0.1.4"
   },
   "scripts": {
     "build": "microbundle --globals stimulus=Stimulus",
