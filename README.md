@@ -45,6 +45,20 @@ application.register('slimselect', StimulusSlimSelect)
 This will start StimulusJS and load any controllers that you have
 locally and then register the Stimulus SlimSelect controller.
 
+## Values
+- Options: `Object`
+
+You can add any options from [slim-select](https://github.com/brianvoe/slim-select/blob/master/src/docs/pages/options.vue) 
+into the component, simply do
+
+```html
+<select 
+    data-controller="slimselect" 
+    data-slimselect-options-value="{slim-select options}">
+
+</select>
+```
+
 ## Extending Components
 
 You can use inheritance to extend the functionality of any Stimulus components.
