@@ -8,6 +8,10 @@ This is a Stimulus wrapper around the [SlimSelect](https://slimselectjs.com/) li
 
 This assumes that [StimulusJS](https://stimulusjs.org) is already installed.
 
+```
+yarn add @hotwired/stimulus
+```
+
 **Optional**: Add the SlimSelect module if it is not already installed:
 
 ```bash
@@ -48,12 +52,12 @@ locally and then register the Stimulus SlimSelect controller.
 ## Values
 - Options: `Object`
 
-You can add any options from [slim-select](https://github.com/brianvoe/slim-select/blob/master/src/docs/pages/options.vue) 
+You can add any options from [slim-select](https://github.com/brianvoe/slim-select/blob/master/src/docs/pages/options.vue)
 into the component, simply do
 
 ```html
-<select 
-    data-controller="slimselect" 
+<select
+    data-controller="slimselect"
     data-slimselect-options-value="{slim-select options}">
 
 </select>
